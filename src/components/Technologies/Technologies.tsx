@@ -30,8 +30,7 @@ const handleRemove = (technology: ITechnology) => {
     <div className="container mx-auto p-4 px-25">
       <div>
         <h2 className="text-4xl font-bold">
-          Explore The
-          <span className="bg-linear-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+          Explore The <span className="bg-linear-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
             Technologies
           </span>
         </h2>
