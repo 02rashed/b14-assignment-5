@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import Banner from './components/Banner'
 import Technologies from './components/Technologies/Technologies'  
 import type {ITechnology} from './types/technologyType'
+import Footer from './components/Footer'
 import './App.css'
 import { Suspense } from 'react'
 
@@ -20,7 +21,8 @@ function App() {
       <Banner />
       <Suspense fallback={<div>Loading...</div>}> 
         <Technologies technologiesPromise={technologiesPromise} />  
-      </ Suspense>  
+      </ Suspense>
+      <Footer />
     </>
   )
 }
