@@ -3,6 +3,8 @@ import Banner from './components/Banner'
 import Technologies from './components/Technologies/Technologies'  
 import type {ITechnology} from './types/technologyType'
 import Footer from './components/Footer'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import './App.css'
 import { Suspense } from 'react'
 
@@ -23,6 +25,7 @@ function App() {
         <Technologies technologiesPromise={technologiesPromise} />  
       </ Suspense>
       <Footer />
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   )
 }
