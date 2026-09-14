@@ -18,8 +18,8 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
     toast.success(`${technology.name} added to stack!`);
   };
 
-  const handleRemove = (technology: ITechnology) => {
-    setAddToStacks((tech) => tech.filter((stack) => stack.name !== technology.name));
+  const handleRemove = (technology: ITechnology) => {setAddToStacks((tech) => 
+    tech.filter((stack) => stack.name !== technology.name));
     toast.info(`${technology.name} removed`);
   };
 
@@ -32,8 +32,7 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
     <div className="container mx-auto p-4 px-25">
       <div>
         <h2 className="text-4xl font-bold">
-          Explore The{" "}
-          <span className="bg-linear-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+          Explore The <span className="bg-linear-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
             Technologies
           </span>
         </h2>
@@ -80,11 +79,9 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
             ))}
           </div>
           {addToStacks.length > 0 && (
-            <button
-              onClick={handleRemoveAll}
-              className="mt-5 h-11 w-full rounded-xl border border-[#ff4d4f] bg-white text-sm font-medium text-[#ff4d4f] transition hover:bg-[#fff1f0]"
-            >
-              Remove All
+            <button onClick={handleRemoveAll} className="mt-5 h-11 w-full rounded-xl border
+             border-[#ff4d4f] bg-white text-sm font-medium text-[#ff4d4f] transition hover:bg-[#fff1f0]">
+            Remove All
             </button>
           )}
         </div>
