@@ -10,7 +10,7 @@ const Technologies = ({ technologiesPromise }: TechnologiesProps) => {
   const [addToStacks, setAddToStacks] = useState<ITechnology[]>([]);
   const technologies = use(technologiesPromise);
   const added = new Set(addToStacks.map((stack) => stack.name));
-  
+
 const handleAddToStack = (technology: ITechnology) => {
   if (added.has(technology.name)) return;
     setAddToStacks((tech) => [...tech, technology]);
@@ -27,7 +27,7 @@ const handleRemove = (technology: ITechnology) => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 px-25">
       <div>
         <h2 className="text-4xl font-bold">
           Explore The
